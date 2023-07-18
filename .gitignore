@@ -1,0 +1,8 @@
+# brewfile
+Brewfile.lock.json
+
+# git
+gitprofile
+
+# karabiner
+karabiner/automatic_backups
