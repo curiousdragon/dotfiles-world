@@ -1,0 +1,39 @@
+" .vimrc file
+" to configure vim
+filetype plugin indent on
+syntax on
+
+" set default colorscheme
+colorscheme slate
+
+" line numbering
+set nu
+set rnu
+
+" cc: colorcolumn
+set cc=80,100
+set ruler
+
+" context lines above / below cursor
+set scrolloff=3
+
+set showcmd
+set showmode
+
+" for tabs 4 spaces
+" et: expandtab (noet: noexpandtab)
+" ts: tabstop, how tab characters are displayed
+" sw: shiftwidth, # spaces to use per indent level
+" sts: softtabstop, # spaces to insert when tab key pressed
+set et
+set sw=4
+set sts=4
+
+" for python
+set splitright
+
+" disable folding
+set foldlevelstart=99
+
+" allow backspacing to be used normally
+set backspace=indent,eol,start

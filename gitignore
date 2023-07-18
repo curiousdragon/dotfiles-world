@@ -1,0 +1,16 @@
+# OS generated
+.DS_Store
+
+# meta
+.gitignore
+
+# Temporary files
+*.swp
+
+# netrwhist
+.netrwhist
+
+# ghstackrc (so token remains secret)
+.ghstackrc
+ghstackrc
+

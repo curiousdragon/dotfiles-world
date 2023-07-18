@@ -1,0 +1,57 @@
+# This is Git's per-user configuration file.
+[include]
+    # You can just update the `gitprofile` file with the username and user email,
+    # and the change will be reflected here.
+    path = ~/.gitprofile
+
+[init]
+    defaultBranch = main
+
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+
+[push]
+    default = simple
+
+[pull]
+    rebase = true
+
+[alias]
+    a = add
+    b = branch
+    bi = branchless init
+    c = commit
+    ca = commit --amend
+    cl = clone
+    cm = commit -m
+    co = checkout
+    d = diff
+    f = fetch
+    l = log --pretty=my-oneline --decorate --graph --date=relative -5
+    ls = log --pretty=my-oneline --decorate --graph --date=relative
+    lsr = ls-remote
+    me = merge
+    p = push
+    r = remote
+    rb = rebase
+    rs = restore --staged
+    rv = remote -v
+    s = status
+    sh = stash list
+    sp = stash apply
+    st = stash
+    t = tag
+    u = pull
+    um = pull origin master
+    ub = pull --rebase
+
+[pretty]
+    my-oneline = %C(yellow)%h%C(reset) %C(green)%cd%C(reset) %C(bold blue)%an%C(reset) %s%C(red)%d%C(reset)
+
+# [filter "lfs"]
+#     smudge = git-lfs smudge -- %f
+#     process = git-lfs filter-process
+#     required = true
+#     clean = git-lfs clean -- %f
+

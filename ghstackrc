@@ -1,0 +1,4 @@
+[ghstack]
+github_url = github.com
+github_oauth = [token]
+github_username = curiousdragon
